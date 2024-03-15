@@ -37,3 +37,21 @@ object RetrofitClient {
 }
 ```
 
+## Calling singleton from fragment or activity
+
+```
+
+ val apiService = RetrofitClient.apiService
+
+        val retrofitData = apiService.getService()
+        retrofitData.enqueue(object : Callback<Student> {
+            override fun onResponse(call: Call<Student>, response: Response<Student>) {
+
+            }
+
+            override fun onFailure(call: Call<Student>, t: Throwable) {
+
+            }
+
+        })
+```
