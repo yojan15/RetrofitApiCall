@@ -7,6 +7,12 @@
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
     implementation "com.github.bumptech.glide:glide:4.15.1"
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    // LiveData (if needed)
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    // Lifecycle (to make ViewModel lifecycle-aware)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
 ```
 
 
